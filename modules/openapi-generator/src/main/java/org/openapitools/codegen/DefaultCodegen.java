@@ -440,7 +440,8 @@ public class DefaultCodegen implements CodegenConfig {
                 .put("trimLineBreaks", new TrimLineBreaksLambda())
                 .put("trimWhitespace", new TrimWhitespaceLambda())
                 .put("trimTrailingWithNewLine", new TrimTrailingWhiteSpaceLambda(true))
-                .put("trimTrailing", new TrimTrailingWhiteSpaceLambda(false));
+                .put("trimTrailing", new TrimTrailingWhiteSpaceLambda(false))
+                .put("removeLineBreaks", new RemoveLineBreaks());
     }
 
     private void registerMustacheLambdas() {
